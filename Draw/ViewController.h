@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+#import "Paint.h"
+
+#import "PaintWebView.h"
+
+@interface ViewController : UIViewController{
+    CGPoint beganPoint;
+    CGPoint movePoint;
+    
+    Paint *paint;
+}
 
 @end

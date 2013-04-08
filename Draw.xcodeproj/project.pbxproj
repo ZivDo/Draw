@@ -18,6 +18,9 @@
 		32169CA2170C0D5500279B05 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32169CA1170C0D5500279B05 /* Default-568h@2x.png */; };
 		32169CA5170C0D5500279B05 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32169CA4170C0D5500279B05 /* ViewController.m */; };
 		32169CA8170C0D5500279B05 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32169CA6170C0D5500279B05 /* ViewController.xib */; };
+		32169CB0170C0F5000279B05 /* Paint.m in Sources */ = {isa = PBXBuildFile; fileRef = 32169CAF170C0F5000279B05 /* Paint.m */; };
+		32ED95FF17112494001DE224 /* BitMapDemo.svg in Resources */ = {isa = PBXBuildFile; fileRef = 32ED95FE17112494001DE224 /* BitMapDemo.svg */; };
+		32ED960217112B21001DE224 /* PaintWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32ED960117112B21001DE224 /* PaintWebView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,11 @@
 		32169CA3170C0D5500279B05 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		32169CA4170C0D5500279B05 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		32169CA7170C0D5500279B05 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		32169CAE170C0F5000279B05 /* Paint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Paint.h; sourceTree = "<group>"; };
+		32169CAF170C0F5000279B05 /* Paint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Paint.m; sourceTree = "<group>"; };
+		32ED95FE17112494001DE224 /* BitMapDemo.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BitMapDemo.svg; sourceTree = "<group>"; };
+		32ED960017112B21001DE224 /* PaintWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaintWebView.h; sourceTree = "<group>"; };
+		32ED960117112B21001DE224 /* PaintWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaintWebView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +91,17 @@
 		32169C91170C0D5400279B05 /* Draw */ = {
 			isa = PBXGroup;
 			children = (
+				32ED95FE17112494001DE224 /* BitMapDemo.svg */,
 				32169C9A170C0D5400279B05 /* AppDelegate.h */,
 				32169C9B170C0D5500279B05 /* AppDelegate.m */,
 				32169CA3170C0D5500279B05 /* ViewController.h */,
 				32169CA4170C0D5500279B05 /* ViewController.m */,
 				32169CA6170C0D5500279B05 /* ViewController.xib */,
 				32169C92170C0D5400279B05 /* Supporting Files */,
+				32169CAE170C0F5000279B05 /* Paint.h */,
+				32169CAF170C0F5000279B05 /* Paint.m */,
+				32ED960017112B21001DE224 /* PaintWebView.h */,
+				32ED960117112B21001DE224 /* PaintWebView.m */,
 			);
 			path = Draw;
 			sourceTree = "<group>";
@@ -163,6 +176,7 @@
 				32169CA0170C0D5500279B05 /* Default@2x.png in Resources */,
 				32169CA2170C0D5500279B05 /* Default-568h@2x.png in Resources */,
 				32169CA8170C0D5500279B05 /* ViewController.xib in Resources */,
+				32ED95FF17112494001DE224 /* BitMapDemo.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +190,8 @@
 				32169C98170C0D5400279B05 /* main.m in Sources */,
 				32169C9C170C0D5500279B05 /* AppDelegate.m in Sources */,
 				32169CA5170C0D5500279B05 /* ViewController.m in Sources */,
+				32169CB0170C0F5000279B05 /* Paint.m in Sources */,
+				32ED960217112B21001DE224 /* PaintWebView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +279,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Draw/Draw-Prefix.pch";
 				INFOPLIST_FILE = "Draw/Draw-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -274,7 +292,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Draw/Draw-Prefix.pch";
 				INFOPLIST_FILE = "Draw/Draw-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -298,6 +318,7 @@
 				32169CAD170C0D5500279B05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

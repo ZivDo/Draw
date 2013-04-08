@@ -12,3 +12,7 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+#define RECT_SCREEN [[UIScreen mainScreen] applicationFrame]
+#define HEIGHT RECT_SCREEN.size.height
+#define WIDTH RECT_SCREEN.size.width
